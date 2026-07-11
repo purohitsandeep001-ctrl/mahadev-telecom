@@ -1,142 +1,254 @@
 # mahadev-telecom
 official website of Mahadev Telecom
-<!DOCTYPE html>
+`<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mahadev Telecom | Vapi</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
 <style>
-body{
+
+*{
 margin:0;
-font-family:Arial,sans-serif;
-background:#f5f5f5;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#111;
+color:#fff;
 }
 
 header{
-background:#0d47a1;
-color:white;
-padding:20px;
-text-align:center;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:#000;
+padding:15px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:1000;
+box-shadow:0 2px 15px rgba(0,0,0,.5);
 }
 
-nav{
-background:#1565c0;
-padding:10px;
-text-align:center;
+.logo{
+font-size:28px;
+font-weight:bold;
+color:#FFD700;
 }
 
 nav a{
-color:white;
+color:#fff;
 text-decoration:none;
-margin:15px;
-font-weight:bold;
+margin-left:20px;
+transition:.3s;
+}
+
+nav a:hover{
+color:#FFD700;
 }
 
 .hero{
-padding:40px;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
 text-align:center;
-background:white;
+background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+url('https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=1600&q=80');
+background-size:cover;
+background-position:center;
+padding:20px;
+}
+
+.hero h1{
+font-size:55px;
+color:#FFD700;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:20px;
+margin-bottom:30px;
 }
 
 .btn{
 display:inline-block;
-padding:12px 25px;
-background:#28a745;
-color:white;
+padding:15px 35px;
+background:#FFD700;
+color:#000;
+font-weight:bold;
 text-decoration:none;
-border-radius:5px;
-margin-top:15px;
+border-radius:50px;
+margin:10px;
+transition:.3s;
 }
 
-.section{
-padding:30px;
-text-align:center;
+.btn:hover{
+transform:scale(1.05);
 }
 
-.card{
-background:white;
-padding:20px;
-margin:15px;
-border-radius:10px;
-box-shadow:0 0 10px rgba(0,0,0,.1);
-}
-
-footer{
-background:#0d47a1;
-color:white;
-text-align:center;
-padding:20px;
-}
 </style>
 
 </head>
+
 <body>
 
 <header>
-<h1>📱 Mahadev Telecom</h1>
-<p>Mobile Sales | Accessories | Repair | Laptop Service</p>
-</header>
+
+<div class="logo">Mahadev Telecom</div>
 
 <nav>
+
 <a href="#">Home</a>
 <a href="#">Products</a>
 <a href="#">Services</a>
+<a href="#">Gallery</a>
 <a href="#">Contact</a>
+
 </nav>
 
-<div class="hero">
-<h2>Welcome to Mahadev Telecom</h2>
+</header>
+
+<section class="hero">
+
+<div>
+
+<h1>Mahadev Telecom</h1>
 
 <p>
-Your One Stop Shop for Mobile Phones,
-Accessories, Laptop & Mobile Repair.
+New & Used Mobiles • Laptop Sales • Mobile Repair • Accessories
 </p>
 
 <a class="btn" href="tel:8401598850">📞 Call Now</a>
 
+<a class="btn" href="https://wa.me/918401598850">
+💬 WhatsApp
+</a>
+<section style="padding:80px 8%;background:#181818;">
+
+<h2 style="text-align:center;color:#FFD700;font-size:38px;margin-bottom:40px;">
+📱 Our Products
+</h2>
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:25px;">
+
+<div style="background:#222;padding:25px;border-radius:15px;text-align:center;">
+<h3>📱 New Mobiles</h3>
+<p>Apple, Samsung, Vivo, Oppo, Redmi, Realme, OnePlus, Nothing</p>
 </div>
 
-<div class="section">
-
-<div class="card">
-<h2>📱 Mobile Phones</h2>
-<p>Latest Android & iPhone Collection.</p>
+<div style="background:#222;padding:25px;border-radius:15px;text-align:center;">
+<h3>♻️ Used Mobiles</h3>
+<p>Certified Second-Hand Smartphones with Warranty*</p>
 </div>
 
-<div class="card">
-<h2>🎧 Accessories</h2>
-<p>Chargers, Earbuds, Covers, Speakers & More.</p>
+<div style="background:#222;padding:25px;border-radius:15px;text-align:center;">
+<h3>💻 Used Laptops</h3>
+<p>Dell, HP, Lenovo, Asus & More</p>
 </div>
 
-<div class="card">
-<h2>🔧 Repair Service</h2>
-<p>Mobile & Laptop Repair by Experts.</p>
+<div style="background:#222;padding:25px;border-radius:15px;text-align:center;">
+<h3>🎧 Accessories</h3>
+<p>Chargers, Covers, Earbuds, Tempered Glass, Gadgets</p>
 </div>
 
 </div>
 
-<div class="section">
+</section>
 
-<h2>📍 Our Address</h2>
+<section style="padding:80px 8%;background:#111;">
 
-<p>
-Shop No.25,
-Nagarseth Chamber,
-Gunjan Road,
-Vapi, Gujarat
+<h2 style="text-align:center;color:#FFD700;font-size:38px;margin-bottom:40px;">
+🛠️ Repair Services
+</h2>
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:25px;">
+
+<div style="background:#222;padding:25px;border-radius:15px;">
+✅ Mobile Repair
+</div>
+
+<div style="background:#222;padding:25px;border-radius:15px;">
+✅ Laptop Repair
+</div>
+
+<div style="background:#222;padding:25px;border-radius:15px;">
+✅ Display Replacement
+</div>
+
+<div style="background:#222;padding:25px;border-radius:15px;">
+✅ Battery Replacement
+</div>
+
+<div style="background:#222;padding:25px;border-radius:15px;">
+✅ Software Update
+</div>
+
+<div style="background:#222;padding:25px;border-radius:15px;">
+✅ Accessories & Gadgets
+</div>
+
+</div>
+
+</section<section style="padding:80px 8%;background:#181818;">
+
+<h2 style="text-align:center;color:#FFD700;font-size:38px;margin-bottom:40px;">
+📸 Our Gallery
+</h2>
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;">
+
+<img src="https://via.placeholder.com/500x350?text=Mahadev+Telecom+Shop" style="width:100%;border-radius:15px;">
+<img src="https://via.placeholder.com/500x350?text=Mobile+Repair" style="width:100%;border-radius:15px;">
+<img src="https://via.placeholder.com/500x350?text=Used+Mobiles" style="width:100%;border-radius:15px;">
+<img src="https://via.placeholder.com/500x350?text=Accessories" style="width:100%;border-radius:15px;">
+
+</div>
+
+</section>
+
+<section style="padding:80px 8%;text-align:center;">
+
+<h2 style="color:#FFD700;font-size:38px;">📍 Contact Us</h2>
+
+<p style="font-size:20px;margin-top:20px;">
+Mahadev Telecom<br>
+Shop No. 25, Nagarseth Chamber,<br>
+Gunjan Road, Vapi, Gujarat
 </p>
 
-</div>
+<p style="margin-top:15px;font-size:20px;">
+📞 8401598850
+</p>
 
-<footer>
+<p style="margin-top:10px;">
+💬 WhatsApp Available
+</p>
 
-<h3>Mahadev Telecom</h3>
+<a class="btn" href="tel:8401598850">Call Now</a>
 
-<p>Thank You For Visiting ❤️</p>
+<a class="btn" href="https://wa.me/918401598850">WhatsApp</a>
+
+</section>
+
+<footer style="background:#000;padding:30px;text-align:center;">
+
+<h3 style="color:#FFD700;">Mahadev Telecom</h3>
+
+<p>© 2026 All Rights Reserved.</p>
 
 </footer>
 
 </body>
 </html>
+</div>
+
+</section>
